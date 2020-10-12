@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './LogIn.css';
 
 function LogIn({ setUserLogIn }){
 
@@ -22,16 +23,21 @@ function LogIn({ setUserLogIn }){
     }
 
     return(
-        <div>
-            <form>
-                <label>Email</label>
-                <input type='text' value={email} onChange={handleEmailInput}></input>
-            <br></br>
-                <label>Password</label>
-                <input type='password' value={password} onChange={handlePasswordInput}></input>
-            <br></br>
-                <button onClick={handleLogin}>Login</button>
-            </form>
+        <div className='container'>
+            <div className='form-container'>
+                <form>
+                    <label>Email</label>
+                    <input type='text' value={email} onChange={handleEmailInput}></input>
+                <br></br>
+                    <label>Password</label>
+                    <input type='password' value={password} onChange={handlePasswordInput}></input>
+                <br></br>
+                    <button onClick={handleLogin}>Login</button>
+                </form>
+            </div>
+            <div className='weather-container'>
+                <p>Weather goes here</p>
+            </div>
         </div>
     )
 }
