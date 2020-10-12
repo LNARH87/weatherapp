@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './LogIn.css';
+import WeatherComponent from './WeatherComponent';
 
 function LogIn({ setUserLogIn }){
 
@@ -36,7 +37,7 @@ function LogIn({ setUserLogIn }){
                 </form>
             </div>
             <div className='weather-container'>
-                <p>Weather goes here</p>
+                <WeatherComponent />
             </div>
         </div>
     )
