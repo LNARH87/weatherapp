@@ -24,13 +24,13 @@ function LogIn({ setUserLogIn }){
 
     return(
         <div className='container'>
+            
             <div className='form-container'>
+            <h1>Sign in</h1>
                 <form>
-                    <label>Email</label>
-                    <input type='text' value={email} onChange={handleEmailInput}></input>
+                    <input type='text' value={email} onChange={handleEmailInput} placeholder='Email'></input>
                 <br></br>
-                    <label>Password</label>
-                    <input type='password' value={password} onChange={handlePasswordInput}></input>
+                    <input type='password' value={password} onChange={handlePasswordInput} placeholder='Password'></input>
                 <br></br>
                     <button onClick={handleLogin}>Login</button>
                 </form>
