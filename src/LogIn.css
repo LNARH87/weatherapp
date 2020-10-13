@@ -33,7 +33,11 @@
 	height: 100%;
 	overflow: hidden;
     z-index: 100;
-    background: #FF416C;
+	background: #FF416C;
+	font-size: 80px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	color: #eee;
 }
 
 input {

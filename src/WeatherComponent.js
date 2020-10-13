@@ -8,7 +8,7 @@ function WeatherComponent(){
     const [ loading, setLoading ] = useState(true);
 
     useEffect(() => {
-        fetch({API})
+        fetch(API)
         .then(res => res.json())
         .then(data => {
             setCurrentWeather(data)
@@ -23,7 +23,7 @@ function WeatherComponent(){
 
     return(
         <>
-         {loading === false ? <p>{currentWeather.temperature}</p> : null}
+         {loading === false ? <p>{currentWeather.current.temperature}</p> : null}
         </>
 
     )
